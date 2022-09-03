@@ -2,7 +2,7 @@ import "./App.css";
 
 import { Route, Routes } from "react-router-dom";
 
-import DefaultLayout from "@/component/Layout";
+import DefaultLayout from "@/layout";
 import React from "react";
 import { route } from "./route";
 
