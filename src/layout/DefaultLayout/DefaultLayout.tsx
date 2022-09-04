@@ -9,18 +9,13 @@ interface ChildrenProps {
 }
 const DefaultLayout: FC<ChildrenProps> = ({ children }: any) => {
   return (
-    <section>
-      <div className="flex items-center">
+    <div className="flex">
+      <main className="flex-1 flex">
         <Sidebar />
-        <div className="max-w-full w-full">
-          <Header />
-          <div className="flex-1">{children}</div>
-        </div>
-      </div>
-      <div>
-        <Footer />
-      </div>
-    </section>
+        <div className="flex-1">{children}</div>
+        <div className="p-4">Sidebar2</div>
+      </main>
+    </div>
   );
 };
 
